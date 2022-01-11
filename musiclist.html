@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music list</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header {
+            display: flex;
+            width: auto;
+            background-color: rgb(85, 3, 117);
+            align-items: center;
+            background-attachment: fixed;
+            height: 10vh;
+        }
+
+        #icon {
+            display: flex;
+            align-items: center;
+            color: wheat;
+            text-decoration: none;
+            margin: 5px 10px;
+            height: 5vh;
+        }
+
+        #login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70vh;
+        }
+
+        #search {
+
+            box-shadow: 0px 0px 10px 0px wheat;
+            border-radius: 10px;
+        }
+
+        .lists {
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            width: 70vh;
+            overflow: scroll;
+            background: fixed;
+            background-image: url(/Images/music.jpg);
+            background-size: 100%;
+        }
+
+        #list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            /* border: 2px solid wheat; */
+        }
+
+        audio {
+            display: flex;
+            height: 20px;
+            width: 80vh;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        #screen {
+            height: 90vh;
+            width: 65rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/music.html" id="icon">Home</a>
+        <a href="#" id="icon">List</a>
+        <a href="/music.html" id="icon" title="All categorie">Categorie</a>
+        <a href="/musiclogin.html" id="icon">login</a>
+        <input id="search" type="Search" placeholder="search">
+    </header>
+    <div class="box">
+
+        <list class="lists">
+            <div id="list">
+                <audio controls onplay="fun()">
+                    <source
+                        src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3"
+                        type="audio/mp3">
+                </audio>
+            </div>
+            <div id="list"><audio controls onplay="fun1()">
+                    <source
+                        src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3"
+                        type="audio/mp3">
+                </audio> </div>
+            <div id="list"><audio controls onplay="fun2()">
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Collision8-Bit.ogg"
+                        type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun3()">
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+                        type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun4()">
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Evillaugh.ogg"
+                        type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun5()">
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun6()">
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-bounce.m4a"
+                        type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun7()">
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a"
+                        type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun8()">
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/week7-button.m4a"
+                        type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun9()">
+                    <source
+                        src="http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/alien_hit.wav"
+                        type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun10()">
+                    <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3"
+                        type="audio/mp3">
+                </audio></div>
+            <div id="list"><audio controls onplay="fun11()">
+
+                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/soundtrack.mp3"
+                        type="audio/mp3">
+                </audio></div>
+
+
+        </list>
+        <div id="screen">
+
+        </div>
+
+    </div>
+</body>
+<script>
+    function fun() {
+        document.getElementById('screen').style.backgroundColor = ' darkblue';
+
+    } function fun1() {
+        document.getElementById('screen').style.backgroundColor = 'darkorange';
+    } function fun2() {
+        document.getElementById('screen').style.backgroundColor = 'darkturquoise';
+    } function fun3() {
+        document.getElementById('screen').style.backgroundColor = 'goldenrod';
+    } function fun4() {
+        document.getElementById('screen').style.backgroundColor = 'green';
+    } function fun5() {
+        document.getElementById('screen').style.backgroundColor = 'red';
+    } function fun6() {
+        document.getElementById('screen').style.backgroundColor = 'yellow';
+    } function fun7() {
+        document.getElementById('screen').style.backgroundColor = 'lawngreen';
+    } function fun8() {
+        document.getElementById('screen').style.backgroundColor = 'darkgreen';
+    } function fun9() {
+        document.getElementById('screen').style.backgroundColor = 'gray';
+    } function fun10() {
+        document.getElementById('screen').style.backgroundColor = 'pink';
+    } function fun11() {
+        document.getElementById('screen').style.backgroundColor = 'gold';
+    }
+</script>
+
+</html>
